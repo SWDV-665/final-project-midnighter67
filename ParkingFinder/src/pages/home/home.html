@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Nearby Parking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+  <div #map id="map"></div>
+
+  <div style="width: 100%; height: 60%">
+    <ion-list>
+      <ion-item *ngFor="let place of places">
+        <ion-avatar item-left>
+          <ion-icon name="pin"></ion-icon>
+        </ion-avatar>
+        <p>{{ place.name }}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
